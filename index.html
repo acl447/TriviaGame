@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trivia Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+</head>
+
+<body>
+
+    <h1>Totally Trivial Trivia!</h1>
+
+    <button id="start-button">Start</button>
+
+    <div class="container" id="game">
+        <div class="row">
+            <div class="col-3">Time Remaining: </div>
+
+            <div class="col-1" id="time-remaining"></div>
+
+            <div class="col-1"> Seconds</div>
+
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-12" id="question-1"></div>
+
+
+
+
+        </div>
+
+        <div class="row">
+            <div class="col-12" id="radio-buttons-1">
+                <label for="">Answer1
+                    <input class="radio-button" id="" type="radio" name="answers-1" value=1>
+                </label>
+                <label for="">Answer2
+                    <input class="radio-button" id="" type="radio" name="answers-1" value=0>
+                </label>
+                <label for="">Answer3
+                    <input class="radio-button" id="" type="radio" name="answers-1" value=0>
+                </label>
+                <label for="">Answer4
+                    <input class="radio-button" id="" type="radio" name="answers-1" value=0>
+                </label>
+
+
+
+            </div>
+
+
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-12" id="question-2"></div>
+
+
+
+
+        </div>
+
+        <div class="row">
+            <div class="col-12" id="radio-buttons-2">
+                <label for="">Answer1
+                    <input class="radio-button" id="" type="radio" name="answers-2" value=0>
+                </label>
+                <label for="">Answer2
+                    <input class="radio-button" id="" type="radio" name="answers-2" value=1>
+                </label>
+                <label for="">Answer3
+                    <input class="radio-button" id="" type="radio" name="answers-2" value=0>
+                </label>
+                <label for="">Answer4
+                    <input class="radio-button" id="" type="radio" name="answers-2" value=0>
+                </label>
+
+
+
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-12" id="question-3"></div>
+
+
+
+
+        </div>
+
+        <div class="row">
+            <div class="col-12" id="radio-buttons-3">
+                <label for="">Answer1
+                    <input class="radio-button" id="" type="radio" name="answers-3" value=0>
+                </label>
+                <label for="">Answer2
+                    <input class="radio-button" id="" type="radio" name="answers-3" value=1>
+                </label>
+                <label for="">Answer3
+                    <input class="radio-button" id="" type="radio" name="answers-3" value=0>
+                </label>
+                <label for="">Answer4
+                    <input class="radio-button" id="" type="radio" name="answers-3" value=0>
+                </label>
+
+
+
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-12" id="question-4"></div>
+
+
+
+
+        </div>
+
+        <div class="row">
+            <div class="col-12" id="radio-buttons-4">
+                <label for="">Answer1
+                    <input class="radio-button" id="" type="radio" name="answers-4" value=0>
+                </label>
+                <label for="">Answer2
+                    <input class="radio-button" id="" type="radio" name="answers-4" value=0>
+                </label>
+                <label for="">Answer3
+                    <input class="radio-button" id="" type="radio" name="answers-4" value=1>
+                </label>
+                <label for="">Answer4
+                    <input class="radio-button" id="" type="radio" name="answers-4" value=0>
+                </label>
+
+
+
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-12" id="question-5"></div>
+
+
+
+
+        </div>
+
+        <div class="row">
+            <div class="col-12" id="radio-buttons-5">
+                <label for="">Answer1
+                    <input class="radio-button" id="" type="radio" name="answers-5" value=1>
+                </label>
+                <label for="">Answer2
+                    <input class="radio-button" id="" type="radio" name="answers-5" value=0>
+                </label>
+                <label for="">Answer3
+                    <input class="radio-button" id="" type="radio" name="answers-5" value=0>
+                </label>
+                <label for="">Answer4
+                    <input class="radio-button" id="" type="radio" name="answers-5" value=0>
+                </label>
+
+
+
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-12" id="question-6"></div>
+
+
+
+
+        </div>
+
+        <div class="row">
+            <div class="col-12" id="radio-buttons-6">
+                <label for="">Answer1
+                    <input class="radio-button" id="" type="radio" name="answers-6" value=1>
+                </label>
+                <label for="">Answer2
+                    <input class="radio-button" id="" type="radio" name="answers-6" value=0>
+                </label>
+                <label for="">Answer3
+                    <input class="radio-button" id="" type="radio" name="answers-6" value=0>
+                </label>
+                <label for="">Answer4
+                    <input class="radio-button" id="" type="radio" name="answers-6" value=0>
+                </label>
+
+
+
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-12" id="question-7"></div>
+
+
+
+
+        </div>
+
+        <div class="row">
+            <div class="col-12" id="radio-buttons-7">
+                <label for="">Answer1
+                    <input class="radio-button" id="" type="radio" name="answers-7" value=0>
+                </label>
+                <label for="">Answer2
+                    <input class="radio-button" id="" type="radio" name="answers-7" value=0>
+                </label>
+                <label for="">Answer3
+                    <input class="radio-button" id="" type="radio" name="answers-7" value=0>
+                </label>
+                <label for="">Answer4
+                    <input class="radio-button" id="" type="radio" name="answers-7" value=1>
+                </label>
+
+
+
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-12" id="question-8"></div>
+
+
+
+
+        </div>
+
+        <div class="row">
+            <div class="col-12" id="radio-buttons-8">
+                <label for="">Answer1
+                    <input class="radio-button" id="" type="radio" name="answers-8" value=1>
+                </label>
+                <label for="">Answer2
+                    <input class="radio-button" id="" type="radio" name="answers-8" value=0>
+                </label>
+                <label for="">Answer3
+                    <input class="radio-button" id="" type="radio" name="answers-8" value=0>
+                </label>
+                <label for="">Answer4
+                    <input class="radio-button" id="" type="radio" name="answers-8" value=0>
+                </label>
+
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+</body>
+
+</html>
