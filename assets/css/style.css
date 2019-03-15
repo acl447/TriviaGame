@@ -1,0 +1,36 @@
+/* Background */
+
+body {
+
+    background-image: url("../images/friends.png");
+
+    
+
+    font-family: 'Chewy', cursive;
+
+
+
+
+
+
+}
+
+h1 {
+
+    
+    font-size: 75px;
+
+    color: yellow;
+    
+
+}
+
+.row
+
+ {
+    
+    font-size: 20px;
+
+    color: green;
+}
+

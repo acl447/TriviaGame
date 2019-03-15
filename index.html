@@ -6,24 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Trivia Game</title>
+    <link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/javascript/app.js"></script>
 </head>
 
 <body>
-
-    <h1>Totally Trivial Trivia!</h1>
-
-    <button id="start-button">Start</button>
-
     <div class="container" id="game">
         <div class="row">
-            <div class="col-3">Time Remaining: </div>
+            <div class="col text-center">
 
-            <div class="col-1" id="time-remaining"></div>
+                <h1 class="">Totally Trivial Trivia!</h1>
+            </div>
+        </div>
 
-            <div class="col-1"> Seconds</div>
+        <div class="row">
+
+            <div class="col text-center">
+
+                <button class="btn btn-primary" id="start-button">Start</button>
+            </div>
+
+        </div>
+
+
+        <div class="row mx-auto px-auto">
+            <div class="col-5" id="time-remaining-label">Time Remaining: </div>
+
+            <div class="col-2" id="time-remaining"></div>
+
+            <div class="col-5" id="seconds"> Seconds</div>
 
 
         </div>
@@ -39,16 +53,16 @@
 
         <div class="row">
             <div class="col-12" id="radio-buttons-1">
-                <label for="">Answer1
+                <label for="">Sandwiches
                     <input class="radio-button" id="" type="radio" name="answers-1" value=1>
                 </label>
-                <label for="">Answer2
+                <label for="">Pizza
                     <input class="radio-button" id="" type="radio" name="answers-1" value=0>
                 </label>
-                <label for="">Answer3
+                <label for="">Ice Cream
                     <input class="radio-button" id="" type="radio" name="answers-1" value=0>
                 </label>
-                <label for="">Answer4
+                <label for="">Doritos
                     <input class="radio-button" id="" type="radio" name="answers-1" value=0>
                 </label>
 
@@ -71,16 +85,16 @@
 
         <div class="row">
             <div class="col-12" id="radio-buttons-2">
-                <label for="">Answer1
+                <label for="">1
                     <input class="radio-button" id="" type="radio" name="answers-2" value=0>
                 </label>
-                <label for="">Answer2
+                <label for="">3
                     <input class="radio-button" id="" type="radio" name="answers-2" value=1>
                 </label>
-                <label for="">Answer3
+                <label for="">2
                     <input class="radio-button" id="" type="radio" name="answers-2" value=0>
                 </label>
-                <label for="">Answer4
+                <label for="">0
                     <input class="radio-button" id="" type="radio" name="answers-2" value=0>
                 </label>
 
@@ -100,16 +114,16 @@
 
         <div class="row">
             <div class="col-12" id="radio-buttons-3">
-                <label for="">Answer1
+                <label for="">Jack
                     <input class="radio-button" id="" type="radio" name="answers-3" value=0>
                 </label>
-                <label for="">Answer2
+                <label for="">Emma
                     <input class="radio-button" id="" type="radio" name="answers-3" value=1>
                 </label>
-                <label for="">Answer3
+                <label for="">Ben
                     <input class="radio-button" id="" type="radio" name="answers-3" value=0>
                 </label>
-                <label for="">Answer4
+                <label for="">Stephanie
                     <input class="radio-button" id="" type="radio" name="answers-3" value=0>
                 </label>
 
@@ -129,16 +143,16 @@
 
         <div class="row">
             <div class="col-12" id="radio-buttons-4">
-                <label for="">Answer1
+                <label for="">Drums
                     <input class="radio-button" id="" type="radio" name="answers-4" value=0>
                 </label>
-                <label for="">Answer2
+                <label for="">Keyboard
                     <input class="radio-button" id="" type="radio" name="answers-4" value=0>
                 </label>
-                <label for="">Answer3
+                <label for="">Guitar
                     <input class="radio-button" id="" type="radio" name="answers-4" value=1>
                 </label>
-                <label for="">Answer4
+                <label for="">Ukelele
                     <input class="radio-button" id="" type="radio" name="answers-4" value=0>
                 </label>
 
@@ -158,16 +172,16 @@
 
         <div class="row">
             <div class="col-12" id="radio-buttons-5">
-                <label for="">Answer1
+                <label for="">Chick and Duck
                     <input class="radio-button" id="" type="radio" name="answers-5" value=1>
                 </label>
-                <label for="">Answer2
+                <label for="">Dog and Chick
                     <input class="radio-button" id="" type="radio" name="answers-5" value=0>
                 </label>
-                <label for="">Answer3
+                <label for="">Cat and Dog
                     <input class="radio-button" id="" type="radio" name="answers-5" value=0>
                 </label>
-                <label for="">Answer4
+                <label for="">2 Dogs
                     <input class="radio-button" id="" type="radio" name="answers-5" value=0>
                 </label>
 
@@ -187,16 +201,16 @@
 
         <div class="row">
             <div class="col-12" id="radio-buttons-6">
-                <label for="">Answer1
+                <label for="">Mr. Heckles
                     <input class="radio-button" id="" type="radio" name="answers-6" value=1>
                 </label>
-                <label for="">Answer2
+                <label for="">Mr. Schmitt
                     <input class="radio-button" id="" type="radio" name="answers-6" value=0>
                 </label>
-                <label for="">Answer3
+                <label for="">Mrs. Cankles
                     <input class="radio-button" id="" type="radio" name="answers-6" value=0>
                 </label>
-                <label for="">Answer4
+                <label for="">Mr. Nitpick
                     <input class="radio-button" id="" type="radio" name="answers-6" value=0>
                 </label>
 
@@ -216,16 +230,16 @@
 
         <div class="row">
             <div class="col-12" id="radio-buttons-7">
-                <label for="">Answer1
+                <label for="">Masseuse
                     <input class="radio-button" id="" type="radio" name="answers-7" value=0>
                 </label>
-                <label for="">Answer2
+                <label for="">Fashion Designer
                     <input class="radio-button" id="" type="radio" name="answers-7" value=0>
                 </label>
-                <label for="">Answer3
+                <label for="">Actress
                     <input class="radio-button" id="" type="radio" name="answers-7" value=0>
                 </label>
-                <label for="">Answer4
+                <label for="">Chef
                     <input class="radio-button" id="" type="radio" name="answers-7" value=1>
                 </label>
 
@@ -245,16 +259,16 @@
 
         <div class="row">
             <div class="col-12" id="radio-buttons-8">
-                <label for="">Answer1
+                <label for="">3
                     <input class="radio-button" id="" type="radio" name="answers-8" value=1>
                 </label>
-                <label for="">Answer2
+                <label for="">1
                     <input class="radio-button" id="" type="radio" name="answers-8" value=0>
                 </label>
-                <label for="">Answer3
+                <label for="">2
                     <input class="radio-button" id="" type="radio" name="answers-8" value=0>
                 </label>
-                <label for="">Answer4
+                <label for="">0
                     <input class="radio-button" id="" type="radio" name="answers-8" value=0>
                 </label>
 
