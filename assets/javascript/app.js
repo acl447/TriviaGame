@@ -32,7 +32,7 @@ $(document).ready(function () {
 
 
 
-        var counter = 120;
+        var counter = 90;
 
         var countDown = setInterval(function () {
             counter--;
@@ -70,6 +70,8 @@ $(document).ready(function () {
         //Gets the value of whichever button is clicked in each radio button group
 
         var radioValue = $("input[name='answers-1']:checked").val();
+
+        
 
 
         if (radioValue) {

@@ -25,12 +25,26 @@ h1 {
 
 }
 
+#time-remaining-label,
+#time-remaining,
+#seconds {
+
+    font-size: 50px;
+}
+
 .row
 
  {
     
-    font-size: 20px;
+    font-size: 25px;
 
     color: green;
+}
+
+button {
+
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
 }
 
