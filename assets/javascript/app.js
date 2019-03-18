@@ -12,63 +12,7 @@ $(document).ready(function () {
 
 
 
-
-
-
-    $("#start-button").click(function () {
-
-        $("#question-1").text("What is Joey's favorite food?");
-
-        $("#question-2").text("How many babies did Phoebe give birth to?");
-
-        $("#question-3").text("What is Ross and Rachel's baby's name?");
-
-        $("#question-4").text("What instrument does Phoebe play?");
-
-        $("#question-5").text("What pets did Joey and Chandler have?");
-
-        $("#question-6").text("What is the name of Monica's upstairs neighbor who would complain about noise?");
-
-        $("#question-7").text("What is Monica's job?");
-
-        $("#question-8").text("How many times has Ross gotten divorced?");
-
-
-
-        var countDown = setInterval(function () {
-            counter--;
-
-            if (counter === 0) {
-
-                clearInterval(countDown);
-
-                unansweredQuestionsCounter -= (correctAnswersCounter + incorrectAnswersCounter);
-
-                alert("Correct Answers: " + correctAnswersCounter + " " +
-                    "Incorrect Answers: " + incorrectAnswersCounter + " " +
-                    "Unanswered Questions: " + unansweredQuestionsCounter
-                );
-
-            }
-
-            $("#time-remaining").text(counter);
-
-
-        }, 1000);
-
-
-
-
-
-    });
-
-
-
-
-
-    $("#submit").click(function () {
-
-        console.log("button clicked");
+    function gameOutcome() {
 
         //Gets the value of whichever button is clicked in each group of radio buttons
 
@@ -87,6 +31,8 @@ $(document).ready(function () {
         var radioValue7 = $("input[name='answers-7']:checked").val();
 
         var radioValue8 = $("input[name='answers-8']:checked").val();
+
+
 
         if (radioValue) {
 
@@ -211,21 +157,63 @@ $(document).ready(function () {
 
         };
 
-
-
         unansweredQuestionsCounter -= (correctAnswersCounter + incorrectAnswersCounter);
 
         alert("Correct Answers: " + correctAnswersCounter + " " +
             "Incorrect Answers: " + incorrectAnswersCounter + " " +
             "Unanswered Questions: " + unansweredQuestionsCounter
-        );
+        )
 
+    };
+
+
+    $("#start-button").click(function () {
+
+        $("#question-1").text("What is Joey's favorite food?");
+
+        $("#question-2").text("How many babies did Phoebe give birth to?");
+
+        $("#question-3").text("What is Ross and Rachel's baby's name?");
+
+        $("#question-4").text("What instrument does Phoebe play?");
+
+        $("#question-5").text("What pets did Joey and Chandler have?");
+
+        $("#question-6").text("What is the name of Monica's upstairs neighbor who would complain about noise?");
+
+        $("#question-7").text("What is Monica's job?");
+
+        $("#question-8").text("How many times has Ross gotten divorced?");
+
+
+
+        var countDown = setInterval(function () {
+            counter--;
+
+            if (counter === 0) {
+
+                clearInterval(countDown);
+
+                gameOutcome();  
+        
+
+            }
+
+            $("#time-remaining").text(counter);
+
+        }, 1000);
 
     });
 
 
 
 
+
+    $("#submit").click(function () {
+
+        gameOutcome();
+
+    });
 
 });
 
