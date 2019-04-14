@@ -4,4 +4,6 @@ Test your Friends trivia knowledge with this game! Just click the start button t
 
 Link to deployed project on GitHub Pages: https://acl447.github.io/TriviaGame/
 
+To make this game 
+
 

@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-
+    //Global variables
 
     var correctAnswersCounter = 0;
 
@@ -11,7 +11,7 @@ $(document).ready(function () {
     var counter = 90;
 
 
-
+    //Function to determine user's numbers of correct answers, incorrect answers, and unanswered questions, and alert to the user
     function gameOutcome() {
 
         //Gets the value of whichever button is clicked in each group of radio buttons
@@ -167,6 +167,7 @@ $(document).ready(function () {
     };
 
 
+    //When the start button is clicked, questions appear and time remaining countdown begins
     $("#start-button").click(function () {
 
         $("#question-1").text("What is Joey's favorite food?");
@@ -190,6 +191,8 @@ $(document).ready(function () {
         var countDown = setInterval(function () {
             counter--;
 
+
+            //when countdown reaches zero, run game outcome function
             if (counter === 0) {
 
                 clearInterval(countDown);
@@ -208,7 +211,7 @@ $(document).ready(function () {
 
 
 
-
+    //When submit button is clicked, run game outcome function
     $("#submit").click(function () {
 
         gameOutcome();

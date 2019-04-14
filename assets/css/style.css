@@ -11,9 +11,9 @@ body {
 
 
 
-
-
 }
+
+/* Page Heading */
 
 h1 {
 
@@ -25,6 +25,8 @@ h1 {
 
 }
 
+/* Time Remaining Countdown */
+
 #time-remaining-label,
 #time-remaining,
 #seconds {
@@ -32,14 +34,18 @@ h1 {
     font-size: 50px;
 }
 
+/* Question and Answer Text */
+
 .row
 
  {
     
     font-size: 25px;
 
-    color: green;
+    color: #007BFF;
 }
+
+/* Buttons */
 
 button {
 
