@@ -199,15 +199,27 @@ $(document).ready(function () {
 
         $("#question-3").text("What is Ross and Rachel's baby's name?");
 
+        $("#radio-buttons-3").append(radioButtonsGroup3);
+
         $("#question-4").text("What instrument does Phoebe play?");
+
+        $("#radio-buttons-4").append(radioButtonsGroup4);
 
         $("#question-5").text("What pets did Joey and Chandler have?");
 
+        $("#radio-buttons-5").append(radioButtonsGroup5);
+
         $("#question-6").text("What is the name of Monica's upstairs neighbor who would complain about noise?");
+
+        $("#radio-buttons-6").append(radioButtonsGroup6);
 
         $("#question-7").text("What is Monica's job?");
 
+        $("#radio-buttons-7").append(radioButtonsGroup7);
+
         $("#question-8").text("How many times has Ross gotten divorced?");
+
+        $("#radio-buttons-8").append(radioButtonsGroup8);
 
         $("#submit-div").append('<button type="submit" id="submit" class="btn btn-primary">Submit</button>');
 
