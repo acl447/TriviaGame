@@ -10,7 +10,22 @@ $(document).ready(function () {
 
     var counter = 90;
 
+    let radioButtonsGroup1 = '<label for="">Sandwiches<input class="radio-button" id="" type="radio" name="answers-1" value=1></label><label for="">Pizza<input class="radio-button" id="" type="radio" name="answers-1" value=0></label><label for="">Ice Cream<input class="radio-button" id="" type="radio" name="answers-1" value=0></label><label for="">Doritos<input class="radio-button" id="" type="radio" name="answers-1" value=0></label>';
 
+    let radioButtonsGroup2 = '<label for="">1<input class="radio-button" id="" type="radio" name="answers-2" value=0></label><label for="">3<input class="radio-button" id="" type="radio" name="answers-2" value=1></label><label for="">2<input class="radio-button" id="" type="radio" name="answers-2" value=0></label><label for="">0<input class="radio-button" id="" type="radio" name="answers-2" value=0></label>';
+
+    let radioButtonsGroup3 = '<label for="">Jack<input class="radio-button" id="" type="radio" name="answers-3" value=0></label><label for="">Emma<input class="radio-button" id="" type="radio" name="answers-3" value=1></label><label for="">Ben<input class="radio-button" id="" type="radio" name="answers-3" value=0></label><label for="">Stephanie<input class="radio-button" id="" type="radio" name="answers-3" value=0></label>';
+    
+    let radioButtonsGroup4 = '<label for="">Drums<input class="radio-button" id="" type="radio" name="answers-4" value=0></label><label for="">Keyboard<input class="radio-button" id="" type="radio" name="answers-4" value=0></label><label for="">Guitar<input class="radio-button" id="" type="radio" name="answers-4" value=1></label><label for="">Ukelele<input class="radio-button" id="" type="radio" name="answers-4" value=0></label>';
+    
+    let radioButtonsGroup5 = '<label for="">Chick and Duck<input class="radio-button" id="" type="radio" name="answers-5" value=1></label><label for="">Dog and Chick<input class="radio-button" id="" type="radio" name="answers-5" value=0></label><label for="">Cat and Dog<input class="radio-button" id="" type="radio" name="answers-5" value=0></label><label for="">2 Dogs<input class="radio-button" id="" type="radio" name="answers-5" value=0></label>';
+    
+    let radioButtonsGroup6 = ' <label for="">Mr. Heckles<input class="radio-button" id="" type="radio" name="answers-6" value=1></label><label for="">Mr. Schmitt<input class="radio-button" id="" type="radio" name="answers-6" value=0></label><label for="">Mrs. Cankles<input class="radio-button" id="" type="radio" name="answers-6" value=0></label><label for="">Mr. Nitpick<input class="radio-button" id="" type="radio" name="answers-6" value=0></label>';
+    
+    let radioButtonsGroup7 = '<label for="">Masseuse<input class="radio-button" id="" type="radio" name="answers-7" value=0></label><label for="">Fashion Designer<input class="radio-button" id="" type="radio" name="answers-7" value=0></label><label for="">Actress<input class="radio-button" id="" type="radio" name="answers-7" value=0></label><label for="">Chef<input class="radio-button" id="" type="radio" name="answers-7" value=1></label>';
+    
+    let radioButtonsGroup8 = '<label for="">3<input class="radio-button" id="" type="radio" name="answers-8" value=1></label><label for="">1<input class="radio-button" id="" type="radio" name="answers-8" value=0></label><label for="">2<input class="radio-button" id="" type="radio" name="answers-8" value=0></label><label for="">0<input class="radio-button" id="" type="radio" name="answers-8" value=0></label>';
+    
     //Function to determine user's numbers of correct answers, incorrect answers, and unanswered questions, and alert to the user
     function gameOutcome() {
 
@@ -167,12 +182,20 @@ $(document).ready(function () {
     };
 
 
-    //When the start button is clicked, questions appear and time remaining countdown begins
+    //When the start button is clicked, questions, answer choices & submit button appear and time remaining countdown begins
     $("#start-button").click(function () {
+
+        $("#time-remaining-label").append("Time Remaining:");
+
+        $("#seconds").append("Seconds");
 
         $("#question-1").text("What is Joey's favorite food?");
 
+        $("#radio-buttons-1").append(radioButtonsGroup1);
+        
         $("#question-2").text("How many babies did Phoebe give birth to?");
+
+        $("#radio-buttons-2").append(radioButtonsGroup2);
 
         $("#question-3").text("What is Ross and Rachel's baby's name?");
 
@@ -185,6 +208,8 @@ $(document).ready(function () {
         $("#question-7").text("What is Monica's job?");
 
         $("#question-8").text("How many times has Ross gotten divorced?");
+
+        $("#submit-div").append('<button type="submit" id="submit" class="btn btn-primary">Submit</button>');
 
 
 
